@@ -136,7 +136,7 @@ Your input files can come from HDFS if you're using Hadoop, or S3 if you're
 using EMR::
 
   $ python my_job.py -r emr s3://my-inputs/input.txt
-  $ python my_job.py -r hadoop hdfs://my_home/input.txt
+  $ python my_job.py -r hadoop hdfs:///my_home/input.txt # If the input file is located /my_home/input.txt in hdfs
 
 If your code spans multiple files, see :ref:`cookbook-src-tree-pythonpath`.
 
